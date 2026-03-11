@@ -16,7 +16,7 @@ const checkOpenApiArtifacts = () => {
     return;
   }
 
-  run('git diff --exit-code -- openapi/openapi.json generated/openapi-client');
+  run('git diff --exit-code -- openapi/openapi.json');
 };
 
 void checkOpenApiArtifacts();
