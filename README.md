@@ -41,30 +41,6 @@ pnpm run prisma:generate
 pnpm run start:dev
 ```
 
-2. Create environment file:
-
-```bash
-cp .env.example .env
-```
-
-3. Start local infrastructure (PostgreSQL + Redis):
-
-```bash
-docker compose up -d
-```
-
-4. Generate Prisma client:
-
-```bash
-pnpm run prisma:generate
-```
-
-5. Start app:
-
-```bash
-pnpm run start:dev
-```
-
 ## Endpoints
 
 - Liveness: `GET /api/v1/health/live`
@@ -124,7 +100,3 @@ pnpm run start:dev
 - Generator config: `openapi-config.yaml`
 - Exported spec: `openapi/openapi.json`
 - Generated SDK output: `generated/openapi-client`
-
-## Planning Documents
-
-See `docs/00-MASTER-PLAN.md` and related files under `docs/`.

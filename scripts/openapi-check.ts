@@ -8,7 +8,7 @@ const run = (command: string) => {
 };
 
 const checkOpenApiArtifacts = () => {
-  run('npm run gen:client');
+  run('pnpm run gen:client');
 
   if (!existsSync('.git')) {
     console.warn('Skip OpenAPI diff check because .git is not available.');
@@ -16,7 +16,7 @@ const checkOpenApiArtifacts = () => {
     return;
   }
 
-  run('git diff --exit-code -- openapi/openapi.json generated/openapi-client');
+  run('git diff --exit-code -- openapi/openapi.json');
 };
 
 void checkOpenApiArtifacts();

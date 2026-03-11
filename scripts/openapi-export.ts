@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
+import { execSync } from 'node:child_process';
 import { VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
@@ -23,6 +24,8 @@ const exportOpenApi = async () => {
 
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, JSON.stringify(document, null, 2), 'utf8');
+
+  execSync('prettier --write openapi/openapi.json', { stdio: 'inherit' });
 
   await app.close();
 };
