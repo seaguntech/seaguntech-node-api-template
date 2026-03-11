@@ -34,5 +34,8 @@ jobs:
       - name: Typecheck
         run: pnpm run typecheck
 
+      - name: Generate Prisma client
+        run: pnpm run prisma:generate
+
       - name: OpenAPI artifacts check
         run: pnpm run openapi:check
