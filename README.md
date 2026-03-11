@@ -1,4 +1,4 @@
-<img width="2048" height="256" alt="template-node-nesst" src="https://github.com/user-attachments/assets/f2fd21b7-bddd-4e91-ad56-00906a185e2a" />
+<img width="2048" height="256" alt="template-node-nesst" src="https://github.com/user-attachments/assets/391ff907-a5d8-4d21-86d3-b46fc76d7dda" />
 
 # SeagunTech Node API Template
 
