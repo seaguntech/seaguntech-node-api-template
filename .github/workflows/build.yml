@@ -28,8 +28,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Setup CI environment
+        run: cp .env.ci .env
+
       - name: Generate Prisma client
         run: pnpm run prisma:generate
 
       - name: Build app
         run: pnpm run build
+
+      - name: OpenAPI artifacts check
+        run: pnpm run openapi:check

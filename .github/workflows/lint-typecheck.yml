@@ -36,6 +36,3 @@ jobs:
 
       - name: Typecheck
         run: pnpm run typecheck
-
-      - name: OpenAPI artifacts check
-        run: pnpm run openapi:check
