@@ -1,0 +1,12 @@
+generatorName: typescript-fetch
+inputSpec: openapi/openapi.json
+outputDir: generated/openapi-client
+additionalProperties:
+  npmName: '@seaguntech/api-client'
+  npmVersion: 0.0.1
+  supportsES6: true
+  modelPropertyNaming: original
+  enumPropertyNaming: original
+  useSingleRequestParameter: true
+  withInterfaces: true
+  typescriptThreePlus: true
