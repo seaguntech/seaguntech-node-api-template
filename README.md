@@ -1,3 +1,5 @@
+<img width="2048" height="256" alt="template-node-nesst" src="https://github.com/user-attachments/assets/f2fd21b7-bddd-4e91-ad56-00906a185e2a" />
+
 # SeagunTech Node API Template
 
 NestJS-based REST API template with OpenAPI, Prisma-ready architecture, Redis-ready auth session design, and Vitest test baseline.
