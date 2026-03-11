@@ -50,7 +50,11 @@ export const setupSwagger = (app: INestApplication, configService: ConfigService
 
   const document = createSwaggerDocument(app, configService);
 
-  SwaggerModule.setup('api/docs', app, document);
+  SwaggerModule.setup('docs', app, document, {
+    swaggerOptions: {
+      persistAuthorization: true,
+    },
+  });
 };
 
 export const createSwaggerDocument = (
